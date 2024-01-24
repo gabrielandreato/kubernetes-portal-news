@@ -19,3 +19,7 @@ Curso em andamento: https://cursos.alura.com.br/course/kubernetes-deployments-vo
 
 ### Deployment strategy
 ![deployment-image.png](images%2Fdeployment-image.png)
+
+#### Implemented deployment.
+![ready pods with deployment.png](images%2Fready%20pods%20with%20deployment.png)
+
