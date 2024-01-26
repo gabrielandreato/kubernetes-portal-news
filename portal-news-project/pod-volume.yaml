@@ -1,0 +1,26 @@
+﻿apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-volume
+  labels:
+    app: pod-volume
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:latest
+      volumeMounts:
+        - mountPath: /volume-into-container
+          name: first-volume
+    - name: jenkins-volume
+      image: jenkins:alpine
+      volumeMounts:
+       - mountPath: /volume-into-container
+         name: first-volume
+         
+  volumes:
+    - name: first-volume
+      hostPath:
+        path: /C/Users/gabriel.andreato/first-volume
+        type: Directory
+  
+  
